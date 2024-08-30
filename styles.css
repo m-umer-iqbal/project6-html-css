@@ -1,0 +1,283 @@
+/**************************************     GLOBAL VARIABLES      ************************************************/
+
+:root{
+    --color1: #7AB2B2;
+    --color2: #33CCCC;
+    --color3: #CDE8E5;
+    --color4: #4D869C;
+}
+
+/**************************************     HTML TAGS      ************************************************/
+*{
+    margin: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    text-align: center;
+}
+hr{
+    width: 10vw;
+    margin: 0 auto;
+    border: 0.625vw dotted var(--color1);
+    border-style: dotted none none;
+}
+/**************************************     NAV BAR      ************************************************/
+
+nav{
+    margin: 0;
+    text-align: left;
+}
+nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+}
+nav > ul > li{
+    display: inline-block;
+    font-size: 1.563vw;
+    padding: 2.25vw;
+}
+nav > ul > li > a{
+    text-align: center;
+    padding: 0.625vw;
+    border-radius: 0.75vw;
+    
+}
+nav > ul > li > a:link{
+    color: var(--color1);
+    text-decoration: none;
+}
+nav > ul > li > a:visited {
+    color: var(--color1);
+    text-decoration: none;
+}
+nav > ul > li > a:hover{
+    background-color: var(--color1);
+    color: black;
+}
+nav > ul > li > a:active {
+    color: black;
+    background-color: var(--color2);
+    text-decoration: none;
+}
+
+
+/**************************************     HEADER      ************************************************/
+
+header{
+    padding-top: 6.25vw;
+    background-color: var(--color1);
+    padding-bottom: 2.25vw;
+}
+.cloud1{
+    height: 8vw;
+    position: absolute;
+        top: 6.875vw;
+        right: 3.125vw;
+}
+.cloud2{
+    height: 5vw;
+    position: absolute;
+        left: 3.125vw;
+}
+.myname{
+    text-align: center;
+    width: 32.978vw;
+    margin: 0 auto;
+}
+.myname > p{
+    font-size: 1.875vw;
+    margin-top: 0.313vw;
+    text-shadow: 0.125vw 0.125vw 0.313vw var(--color3);
+}
+.myname > h1{
+    font-family: "Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+    font-size: 5.125vw;
+    margin-bottom: 0;
+}
+.mountain{
+    height: 25vw;
+    width: 44.932vw;
+    margin: 0 auto;
+}
+
+/***************************************     MAIN       ******************************************/
+
+main{
+    background-color: var(--color3);
+}
+
+/***************************************     MAIN SECTION 1      ******************************************/
+
+.profile{
+    padding: 2vw;
+    width: 60vw;
+    margin: 0 auto;
+}
+.profile > img{
+    width: 15vw;
+    height: 15vw;
+}
+.profile > h2{
+    font-family: "Sanchez", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    padding: 2vw;
+    font-size: 3vw;
+}
+.profile > p{
+    font-size: 1.563vw;
+    padding: 1vw;
+    text-align: justify;
+}
+
+/***************************************     MAIN SKILLS SECTION      ******************************************/
+
+.skills > h2{
+    font-family: "Sanchez", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    padding: 5vw 5vw 0;
+    font-size: 3vw;
+}
+
+/***************************************     MAIN SKILLS ROW       ******************************************/
+
+.skill-row{
+    width: 60vw;
+    margin: 5vw auto;
+    display: flow-root;
+}
+.skill-row > img{
+    box-sizing: border-box;
+    width: 20.625vw;
+    height: 21.625vw;
+}
+.skill-row > h3{
+    font-family: "Sanchez", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    color: var(--color2);
+    text-align: left;
+    padding: 0.313vw;
+    font-size: 2vw;
+}
+.skill-row > p{
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+.web-dev-img{
+    float: left;
+    padding-right: 0.313vw;
+}
+.programming-skills-img{
+    float: right;
+    padding-left: 0.313vw;
+}
+
+/***************************************     MAIN CONTACT ME       ******************************************/
+
+.contact-me{
+    width: 60vw;
+    margin: 0 auto;
+    padding: 2vw;
+}
+.contact-me > h2{
+    font-family: "Sanchez", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    padding: 0.5vw;
+    font-size: 3vw;
+}
+.contact-me > h3{
+    font-family: "Sanchez", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    color: var(--color2);
+    padding: 0.313vw;
+    font-size: 2vw;
+    text-shadow: 0.3vw 0.3vw 0.625vw;
+}
+.contact-me > p{
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 2vw;
+}
+.btn {
+    background: #CDE8E5;
+    background-image: -webkit-linear-gradient(top, #CDE8E5, #33CCCC);
+    background-image: -moz-linear-gradient(top, #CDE8E5, #33CCCC);
+    background-image: -ms-linear-gradient(top, #CDE8E5, #33CCCC);
+    background-image: -o-linear-gradient(top, #CDE8E5, #33CCCC);
+    background-image: linear-gradient(to bottom, #CDE8E5, #33CCCC);
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 0.75vw;
+    color: #ffffff;
+    font-size: 2vw;
+    padding: 0.625vw 1.25vw;
+    text-decoration: none;
+    box-shadow: 0.35vw 0.35vw 1vw #4D869C;
+}
+.btn:hover {
+    background: #EEF7FF;
+    background-image: -webkit-linear-gradient(top, #EEF7FF, #4D869C);
+    background-image: -moz-linear-gradient(top, #EEF7FF, #4D869C);
+    background-image: -ms-linear-gradient(top, #EEF7FF, #4D869C);
+    background-image: -o-linear-gradient(top, #EEF7FF, #4D869C);
+    background-image: linear-gradient(to bottom, #EEF7FF, #4D869C);
+    text-decoration: none;
+    box-shadow: 0.35vw 0.35vw 1vw var(--color4);
+}
+
+/***************************************     FOOTER       ******************************************/
+
+footer{
+    background-color: var(--color4);
+    padding: 2vw;
+    font-size: 1.5vw;
+}
+footer > a{
+    padding: 2vw;
+}
+.footer-link:link{
+    text-decoration: none;
+    color: var(--color1);
+    
+}
+.footer-link:visited{
+    text-decoration: none;
+    color: var(--color1);
+}
+.footer-link:hover{
+    text-decoration: underline;
+    color: var(--color3);
+}
+.footer-link:active{
+    text-decoration: underline;
+    color: var(--color2);
+}
+footer > p{
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1vw;
+    margin: 2vw 0 0;
+    color: var(--color3);
+}
